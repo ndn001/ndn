@@ -55,10 +55,11 @@ body {
 /* Judul/Header */
 
 .header {
-    padding: 30px;
+    padding: 20px;
     text-align: center;
-    background: #305f72;
-    color: white;
+    background-image: linear-gradient(to right, #4682B4, #00FFFF, #044d31);
+    /*background: #305f72; */
+    color: rgba(0, 0, 0, 0.363);
     justify-content: center;
 }
 
