@@ -63,6 +63,11 @@ body {
 	}
 }
 
+h1 {
+    font-size: 60px;
+    margin: 0px;
+}
+
 /* Menu Atas */
 .navbar {
     display: flex;
