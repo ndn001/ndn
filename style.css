@@ -9,13 +9,24 @@ body {
     justify-content: center;
     margin: 0;
     color: #fff;
-	background: linear-gradient(-45deg, #7CFC00, #00FF00, #EE7752, #E73C7E, #23A6D5, #23D5AB, #FFFF00);
-	background-size: 400% 400%;
+    background-image: linear-gradient(#44a08d, #093637);
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    /* */
+    /*background: #305f72; */
+    color: rgba(255, 255, 255, 0.589);
+    justify-content: center;
+    /*AREA BG*/
+    background: linear-gradient(-45deg, #7CFC00, #00FF00, #EE7752, #E73C7E, #23A6D5, #23D5AB, #FFFF00);
+	background-size: 200% 200%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
 	animation: Gradient 15s ease infinite;
-
 }
+
 @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
@@ -50,17 +61,6 @@ body {
 	100% {
 		background-position: 0% 50%
 	}
-}
-
-/* Judul/Header */
-
-.header {
-    padding: 20px;
-    text-align: center;
-    background-image: linear-gradient(to right, #4682B4, #00FFFF, #044d31);
-    /*background: #305f72; */
-    color: rgba(0, 0, 0, 0.363);
-    justify-content: center;
 }
 
 /* Menu Atas */
