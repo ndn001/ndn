@@ -69,6 +69,21 @@ h1 {
     
 }
 
+h2 {
+    font-size: 30px;
+    margin: auto;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    margin: auto;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+
 /* Menu Atas */
 .navbar {
     display: flex;
