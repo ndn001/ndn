@@ -1,16 +1,6 @@
 *{
     box-sizing: border-box;
 }
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-position: center;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    color: #fff;
-    background-image: linear-gradient(#2d7e6d, #093637);
-}
 
 .header {
     padding: 20px;
@@ -18,9 +8,10 @@ body {
     /* */
     /*background: #305f72; */
     color: rgba(255, 255, 255, 0.589);
-    justify-content: center;
+    justify-content: space-between;
     /*AREA BG*/
-    background: linear-gradient(-45deg, #7CFC00, #00FF00, #EE7752, #E73C7E, #23A6D5, #23D5AB, #FFFF00);
+    background: linear-gradient(-45deg, #24380f, #006797, #ad2901, #5e5e5e, #d4f3ff, #070707, #000e8d);
+	/*background: linear-gradient(-45deg, #7CFC00, #00FF00, #EE7752, #E73C7E, #23A6D5, #23D5AB, #FFFF00);*/
 	background-size: 200% 200%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
@@ -63,6 +54,47 @@ body {
 	}
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-position: center;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: #fff;
+    background-image: linear-gradient(#2d7e6d, #093637);
+	background-attachment: fixed;
+}
+
+/* Column container | Kolom kanan */
+.row {  
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Sidebar/Kolom kiri*/
+.side {
+	flex: 10%;
+	background-color: #00000049;
+	padding: 20px;
+}
+
+
+/* Main column/Kolom kanan*/
+.main {
+	flex: 70%;
+	background-color: rgba(255, 255, 255, 0.274);
+	padding: 20px;
+}
+
+/* Sampel gambar */
+.fakeimg {
+	background-color: #ffffff63;
+	width: 100%;
+	padding: 20px;
+}
+
+
 h1 {
     font-size: 60px;
     margin: 0px;
@@ -90,6 +122,7 @@ h3 {
     display: flex;
     background-color: #333;
     justify-content: center;
+
 }
 
 .navbar a {
@@ -98,9 +131,11 @@ h3 {
     text-decoration: none;
     text-align: center;
     position: center;
+	
 }
 .navbar a:hover {
-    background-color: #555;
+    background-color: #ad0000;
+	text-decoration: overline;
 
 }
 
@@ -167,4 +202,16 @@ h3 {
 	color: #FFFFFF;
 	border-color: #6ea1cc !important;
 	text-transform: uppercase;
+}
+
+ /* Footer */
+ .footer {
+	padding: 20px;
+	text-align: center;
+	background: #ffa600ce;
+}
+@media (max-width: 700px) {
+	.row, .navbar {   
+		flex-direction: column;
+	}
 }

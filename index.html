@@ -1,36 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-    <header class=""header-one-sticky-header">
-    <div class="header-topbar">
-        
-    </div></header>
-    <head>
-        <div class="header">  
-        <meta charset="UTF-8">
-            <h1>NDN 1.1</h1>
-            </div>  
-            <link rel="stylesheet" href="style.css"/>
-    </head>
-<body>
-        <!-- Navigation Bar -->
-        <div class="navbar">
-              <a href="index.html">				HOME			</a>
-              <a href="#jurusan">			JURUSAN			</a>
-              <a href="mk.html">				MATA KULIAH		</a>
-              <a href="#Journal">				JOURNAL			</a>
-              <a href="#Contact">				KONTAK			</a>
+    <meta charset="UTF-8">
+        <body>
+        <div class="column">
+                <div class="kiri">
+                    <h1>"the best thing are learnt during the worst days of your life, 
+                     get up and see what new learning you had on a bad day"</h1>
+                </div>
+                <div class="kanan">
+                    <h2> HOLA !</h2>
+                    <h3>This Is My Github Preview</h3>
+                    <h3>Hope U Inspired!</h3>
+                    <h3>U Can Leave Feedback To My Page!</h3>
+                    <!--<input type="submit"  value="Klik Disini" >-->
+                    <button class="button" role="button" onclick="window.location.href='index.html';">
+                        See Inside!
+                    </button>
+                </div>
+           
         </div>
-      
-      <div class="wrapper">
-        <section id="'HOME">
-            <div class="KOLOM">
-            <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo accusamus, at, dolorem earum error voluptatum quasi iure reiciendis temporibus libero, 
-              beatae tempora doloremque sequi! Iure laudantium officia dolorem corporis nihil.</p>
-            <h2>KULIAH - TUGAS - LULUS !</h2>
-            <p>UI</p>
-          </div>
-        </section>
-        
-      </div>
-</body>
+
+        <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+            'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+            'Helvetica Neue', sans-serif;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            
+        }
+
+        .column {
+            width: auto;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .column .kanan{
+            width: 35%;
+            height: 920px;
+            background: linear-gradient(#00e1ff, #5a94ff);
+            float: left;
+        }
+
+        .column .kiri{
+            width: 65%;
+            height: 920px;;
+            /*background-color: rgb(146, 9, 151);*/
+            float: left;
+            background: linear-gradient(-45deg, #7CFC00, #00FF00, #EE7752, #E73C7E, #23A6D5, #23D5AB, #FFFF00);
+	        background-size: 200% 200%;
+	        -webkit-animation: Gradient 15s ease infinite;
+	        -moz-animation: Gradient 15s ease infinite;
+	        animation: Gradient 15s ease infinite;
+        }
+
+            @-webkit-keyframes Gradient {
+	            0% {
+		                background-position: 0% 50%
+	                    }
+	            50% {
+		                background-position: 100% 50%
+	                }
+	            100% {
+		                background-position: 0% 50%
+	             }
+            }
+ 
+            @-moz-keyframes Gradient {
+	            0% {
+		                background-position: 0% 50%
+	                }               
+	            50% {
+		                background-position: 100% 50%
+	                }
+	            100% {
+		                background-position: 0% 50%
+	            }
+            }
+ 
+            @keyframes Gradient {
+	            0% {
+		                background-position: 0% 50%
+	            }
+	            50% {
+		                background-position: 100% 50%
+	            }
+	            100% {
+		                background-position: 0% 50%
+	            }
+            }
+
+        h1 {
+            min-height: 10%;
+            max-height: 35%;
+            background: #ffffff8c;
+            margin: auto;
+            margin-top: 250px;
+            padding: 80px;
+            max-width: 400px;
+            border-top: 0;
+            box-shadow: #ffffff 0px 0px 15px;
+            border-radius: 20px;
+            height: max-content;
+            color: rgb(255, 255, 255);
+            /*margin-top: 250px;
+            margin-left: 150px;
+            margin-right: 200px;
+            text-align: center;
+            font-size: 50px;
+            color: white;*/
+        }
+
+        h2 {
+            margin-top: 250px;
+            text-align: center;
+            font-size: 40px;
+            color: aliceblue;
+        }
+
+        h3 {
+            margin: auto;
+            margin-left: 50px;
+            font-size: 25px;
+            color: aliceblue;
+        }
+        .button {
+            margin: auto;
+            margin-top: 20px;
+            align-items: center;
+            background-image: linear-gradient(144deg,#ce8dfd, #5B42F3 50%,#00a2ad);
+            border: 0;
+            border-radius: 40px;
+            box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            display: flex;
+            font-family: Phantomsans, sans-serif;
+            font-size: 20px;
+            justify-content: center;
+            line-height: 1em;
+            max-width: 100%;
+            min-width: 140px;
+            padding: 19px 24px;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .button:active,
+        .button:hover {
+            outline: 0;
+        }
+
+        @media (min-width: 768px) {
+            .button {
+                font-size: 24px;
+                min-width: 196px;
+        }
+        }
+
+        </style>
+    </body>
 </html>
